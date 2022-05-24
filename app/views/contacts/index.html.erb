@@ -1,21 +1,22 @@
 <p style="color: green"><%= notice %></p>
 <h1>Contacts</h1>
- <table class="table table-striped table-bordered">
-<thead>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-dark">
     <tr>
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>
       <th scope="col">Email</th>
       <th scope="col">Phone</th>
       <th scope="col">Twitter</th>
+      <th scope="col"></th>
     </tr>
-</thead>
-<div id="contacts">
-  <% @contacts.each do |contact| %>
+  </thead>
+  <div id="contacts">
     <tbody>
+      <% @contacts.each do |contact| %>
       <%= render contact %>
-    <tbody>
-    <% end %>
-</div>
+      <% end %>
+    </tbody>
+  </div>
 </table>
 <%= link_to " Add New Contact", new_contact_path %>
