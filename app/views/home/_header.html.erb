@@ -1,7 +1,13 @@
 <nav class="navbar navbar-dark bg-dark">
-    <ul>
-        <%= link_to "HOME", root_path, class:"navbar-brand" %>
-        <%= link_to "CONTACTS", contacts_path, class:"navbar-brand" %>
-        <%= link_to "ABOUT US", home_about_path, class:"navbar-brand" %>
+    <ul class="list-inline">
+        <li class="nav-item">
+            <%= link_to "HOME", root_path, class:"navbar-brand" %>
+        </li>
+        <li>
+            <%= link_to "CONTACTS", contacts_path, class:"navbar-brand" %>
+        </li>
+        <li>
+            <%= link_to "ABOUT US", home_about_path, class:"navbar-brand" %>
+        </li>
     </ul>
 </nav>
