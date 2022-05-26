@@ -5,9 +5,9 @@
         <% if user_signed_in? %>
             <%= link_to "CONTACTS", contacts_path, class:"navbar-brand" %>
             <%= link_to "EDIT PROFILE", edit_user_registration_path, class:"navbar-brand" %>
-            <%= link_to "SING OUT", destroy_user_session_path, method: :delete, class:"navbar-brand" %>
+            <%= link_to "LOG OUT", destroy_user_session_path, :method => :delete, class:"navbar-brand" %>
         <% else %>
-            <%= link_to "SING IN", new_user_session_path, class:"navbar-brand" %>
+            <%= link_to "LOG IN", new_user_session_path, class:"navbar-brand" %>
             <%= link_to "SING UP", new_user_registration_path, class:"navbar-brand" %>
         <% end %>
     </ul>
