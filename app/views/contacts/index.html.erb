@@ -14,7 +14,9 @@
   <div id="contacts">
     <tbody>
       <% @contacts.each do |contact| %>
-      <%= render contact %>
+        <% if  contact.user == current_user %>
+        <%= render contact %>
+        <% end %>
       <% end %>
     </tbody>
   </div>

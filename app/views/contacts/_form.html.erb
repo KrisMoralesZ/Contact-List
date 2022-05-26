@@ -35,6 +35,9 @@
   <%= form.label :twitter, style: "display: block" %>
   <%= form.text_field :twitter, placeholder:"Twitter" %>
 </div>
+<div class="form-group">
+  <%= form.number_field :user_id, id: :contact_user_id, value: current_user.id, type: :hidden%>
+</div>
 
 <div>
   <%= form.submit %>
